@@ -43,7 +43,7 @@ func main() {
 	m.SetHtml(content)
 	_, id, err := mg.Send(m)
 	if err != nil {
-		log.Fatal("Error sending", err)
+		log.Fatalf("Error sending %s", err)
 	}
 
 	log.Printf("Message sent %s\n", id)
